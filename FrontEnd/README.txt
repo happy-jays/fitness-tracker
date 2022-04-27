@@ -1,0 +1,26 @@
+1. Download the zip file and extract all documents.
+2. Open the folder in VScode and then open a terminal.
+3. Some installations should be done first:
+	i.   npm install
+	ii.  npm install react-router-dom@5.2
+	iii. npm install json-server
+	iv.  npm install react-bootstrap
+	v.   npm install aos
+	vi.  npx json-server --watch data/blogdata.json --port 8000 (run it in a separate terminal to run the JSON server)
+4. Next, run 'npm start'.
+5. A tab of your browser, mentioned 'localhost:3000' in the url box appears. We need to mention /home at the end of it. Then, we will enter into the home page.  
+6. We have a few options, Login, Signup, Workout Planner, Check your BMI, Yoga, Trial, Blog and Write Blog on the home page.
+7. Login: We can enter the credentials to login or click on 'Signup' if we haven't created an account already or click on 'Back to home Page'.
+8. Signup: We can enter the credentials to Signup or click on 'Login' if we have created an account already or click on 'Back to home Page'.
+9. Workout Planner: 
+	- Here we can enter details about the excercise and click 'enter'.
+	- When we click on View my planned excercises, the excercise listed associating with the day will appear.
+	- We can click on the listed excercise to check details or remove it or mark it as 'Done'.
+	- By clicking on 'View my done excercises' the day-wise tracking of components like calories, distance can be checked.
+	- We can go 'Back to home' page.
+10. Check your BMI: We can enter our height and weight and our BMI(Body-Mass Index) calculated and along with a comment stating if we are 'normal weight' or 'low weight' or 'over weight'
+11. Yoga: A wide range of asanas along with respwctive positions are mentioned here. And there's a 'Back to home button'
+12. Trial: We can enter the details about our fitness here. And we have a button to get 'back to home page'
+13. Blog: A set of articles written by different users is displayed here.
+14. Write a blog: We can also write a new article for the blog by clicking on it. Enter the name, title, content and click 'Add Blog'. We can then go to Blog page to check the article or to the home page.
+15. The mock backend calls are handled using JSON server. We can check the data in the server by running 'npx json-server --watch data/blogdata.json --port 8000' 

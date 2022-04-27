@@ -1,0 +1,8 @@
+OPTIONS /blog/createpost 200 4 - 0.298 ms
+POST /blog/createpost 200 44 - 46.303 ms
+OPTIONS /blog/posts 200 8 - 0.759 ms
+GET /blog/posts 200 971 - 19.034 ms
+GET /images/0.5191797753571181Figure_3.png 304 - - 1.079 ms
+GET /images/0.29011122394451716kakashi-hatake-gc92139e2a_1920.png 304 - - 1.109 ms
+GET /images/0.21689775138390188anbu-ga3b907589_1280.png 304 - - 2.858 ms
+GET /images/0.9275384016928916anbu-ga3b907589_1280.png 200 227404 - 6.786 ms

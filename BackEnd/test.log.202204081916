@@ -1,0 +1,5 @@
+OPTIONS /blog/createpost 200 4 - 0.287 ms
+POST /blog/createpost 200 44 - 50.801 ms
+OPTIONS /blog/posts 200 8 - 0.956 ms
+GET /blog/posts 200 1186 - 11.987 ms
+GET /images/0.02436492103955845fitness%20plan%201.jpg 200 107946 - 2.267 ms

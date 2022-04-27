@@ -1,0 +1,7 @@
+GET /api-docs 301 183 - 3.680 ms
+GET /api-docs/ 200 3102 - 5.039 ms
+GET /api-docs/swagger-ui-init.js 200 5818 - 0.361 ms
+GET /api-docs/swagger-ui-standalone-preset.js 200 339540 - 4.829 ms
+GET /api-docs/swagger-ui.css 200 143980 - 13.409 ms
+GET /api-docs/swagger-ui-bundle.js 200 1095130 - 5.367 ms
+GET /api-docs/favicon-32x32.png 200 628 - 7.118 ms

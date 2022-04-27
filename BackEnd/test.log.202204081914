@@ -1,0 +1,2 @@
+OPTIONS /blog/createpost 200 4 - 5.734 ms
+POST /blog/createpost 500 42 - 81.917 ms

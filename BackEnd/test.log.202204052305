@@ -1,0 +1,2 @@
+GET /blog/posts 304 - - 11.637 ms
+GET /blog/posts 304 - - 3.999 ms

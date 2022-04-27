@@ -1,0 +1,2 @@
+OPTIONS /auth/signup 200 4 - 8.748 ms
+POST /auth/signup 200 52 - 57.534 ms

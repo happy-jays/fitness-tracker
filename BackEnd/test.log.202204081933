@@ -1,0 +1,2 @@
+OPTIONS /blog/posts 200 8 - 0.773 ms
+GET /blog/posts 304 - - 23.269 ms

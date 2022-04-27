@@ -1,0 +1,2 @@
+OPTIONS /auth/login 200 4 - 1.105 ms
+POST /auth/login 200 243 - 18.996 ms

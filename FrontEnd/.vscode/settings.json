@@ -1,0 +1,7 @@
+{
+    "workbench.settings.editor": "json",
+    "prettier.jsxBracketSameLine":true,
+    "files.associations": {
+        "*.js":"javascriptreact"
+    }
+}

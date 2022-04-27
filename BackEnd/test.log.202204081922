@@ -1,0 +1,8 @@
+GET /api-docs/ 200 3102 - 2.388 ms
+GET /api-docs/swagger-ui.css 304 - - 1.011 ms
+GET /api-docs/swagger-ui-bundle.js 304 - - 1.316 ms
+GET /api-docs/swagger-ui-init.js 304 - - 0.325 ms
+GET /api-docs/swagger-ui-standalone-preset.js 304 - - 2.577 ms
+GET /blog/posts 304 - - 11.475 ms
+GET /blog/posts 304 - - 4.612 ms
+GET /yoga 404 143 - 1.654 ms

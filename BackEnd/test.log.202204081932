@@ -1,0 +1,7 @@
+OPTIONS /blog/posts 200 8 - 0.866 ms
+GET /blog/posts 304 - - 12.450 ms
+GET /images/0.5191797753571181Figure_3.png 304 - - 0.664 ms
+GET /images/0.29011122394451716kakashi-hatake-gc92139e2a_1920.png 304 - - 1.622 ms
+GET /images/0.21689775138390188anbu-ga3b907589_1280.png 304 - - 3.742 ms
+GET /images/0.9275384016928916anbu-ga3b907589_1280.png 304 - - 5.490 ms
+GET /images/0.02436492103955845fitness%20plan%201.jpg 304 - - 3.257 ms

@@ -1,0 +1,2 @@
+POST /auth/signup 200 52 - 24.442 ms
+POST /auth/signup 401 65 - 3.654 ms

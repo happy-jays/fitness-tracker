@@ -1,0 +1,12 @@
+OPTIONS /blog/posts 200 8 - 1.701 ms
+GET /blog/posts 304 - - 21.668 ms
+GET /images/0.29011122394451716kakashi-hatake-gc92139e2a_1920.png 304 - - 4.186 ms
+GET /images/0.5191797753571181Figure_3.png 304 - - 3.353 ms
+GET /images/0.21689775138390188anbu-ga3b907589_1280.png 304 - - 2.143 ms
+GET /images/0.9275384016928916anbu-ga3b907589_1280.png 304 - - 2.118 ms
+OPTIONS /blog/posts 200 8 - 0.962 ms
+GET /blog/posts 304 - - 22.069 ms
+GET /images/0.5191797753571181Figure_3.png 304 - - 6.323 ms
+GET /images/0.29011122394451716kakashi-hatake-gc92139e2a_1920.png 304 - - 5.754 ms
+GET /images/0.21689775138390188anbu-ga3b907589_1280.png 304 - - 3.885 ms
+GET /images/0.9275384016928916anbu-ga3b907589_1280.png 304 - - 2.095 ms

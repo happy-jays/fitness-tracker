@@ -1,0 +1,141 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title:  Fitness APP
+  description: Fitness based
+
+servers:
+  - url: http://localhost:8080/
+  - url: http://localhost:8000/
+              
+tags:
+  - name: Blog
+    description: API to manage the Bank Application.
+
+paths:
+  /blog/posts:
+    get:
+      summary: Lists all the blogs
+      tags: [blog]
+      responses:
+        "200":
+          description: The list of blogs.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/blog'
+  /blog/createpost:
+    post:
+      summary: adds a blog
+      tags: [blog]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/blog'
+      responses: 
+        '201':
+          description: Created
+  
+
+  /auth/login:
+    post:
+      summary: login
+      tags: [login]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/user'
+      responses: 
+        '201':
+          description: Created
+  
+  /auth/signup:
+    post:
+      summary: signup
+      tags: [signup]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/user'
+      responses: 
+        '201':
+          description: Created
+  /yoga:
+    get:
+      summary: Lists all the yoga aasans
+      tags: [yoga]
+      responses:
+        "200":
+          description: The list of yoga aasans.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/yoga'    
+components:
+  schemas:
+    blog:
+      type: object
+      required:
+        - author
+        - title
+        - content
+      properties:
+        author:
+          type: string
+          description: account number of the user.
+        title:
+          type: string
+          description: loan amount of the user.
+        content:
+          type: string
+          description: interest of the loan.
+        
+      
+
+    user:
+      type: object
+      required:
+        - name
+        - password
+        - email
+
+      properties:
+        name:
+          type: string
+          description: The name of the user.
+        password:
+          type: string
+          description: The password of user
+        email:
+          type: string
+          description: The email of user
+    
+    yoga:
+      type: object
+      required:
+        - sanskrit_name
+        - english_name
+        - img_url
+       
+      properties:
+        sanskrit_name:
+          type: string
+          description: account number of the user.
+        english_name:
+          type: string
+          description: loan amount of the user.
+        img_url:
+          type: string
+          description: interest of the loan.
+
+
+      
+
+    
+        

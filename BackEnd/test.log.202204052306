@@ -1,0 +1,3 @@
+POST /blog/createpost 401 49 - 0.685 ms
+POST /blog/createpost 401 49 - 0.267 ms
+GET /blog/posts 304 - - 5.873 ms

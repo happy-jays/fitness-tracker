@@ -1,0 +1,5 @@
+OPTIONS /blog/createpost 200 4 - 0.894 ms
+POST /blog/createpost 200 44 - 40.684 ms
+OPTIONS /blog/posts 200 8 - 0.762 ms
+GET /blog/posts 200 202 - 9.681 ms
+GET /images/0.5191797753571181Figure_3.png 200 187626 - 4.397 ms

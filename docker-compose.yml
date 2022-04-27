@@ -1,0 +1,70 @@
+version: '3.8'
+
+x-common-variables: &common-variables
+   MYSQL_DATABASE: node-complete
+   MYSQL_PASSWORD: happy&2001
+   MYSQL_ALLOW_EMPTY_PASSWORD: false
+   MYSQL_RANDOM_ROOT_PASSWORD: false
+services:
+  mysql_db:
+    image: mysql
+    restart: always
+    cap_add:
+      - SYS_NICE
+    volumes:
+      - "./setup.sql:/docker-entrypoint-initdb.d/setup.sql"
+    ports:
+      - "8080:8080"
+    environment:
+      <<: *common-variables
+      
+
+  nginx:
+    depends_on:
+      - server
+      - client
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    ports:
+      - "3050:80"
+
+  server:
+    build:
+      dockerfile: Dockerfile
+      context: "./Backend"
+    depends_on:
+      - mysql_db
+    volumes:
+      - /app/node_modules
+      - ./Backend:/app
+    environment:
+      <<: *common-variables
+      MYSQL_HOST_IP: mysql_db
+    # port:
+    #   - 8080:8080
+
+  client:
+    stdin_open: true
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      dockerfile: Dockerfile
+      context: ./Frontend
+    volumes:
+      - /app/node_modules
+      - ./Frontend:/app
+    ports:
+      - 3000:3000
+
+  adminer:
+      image: adminer:latest
+      restart: unless-stopped
+      ports:
+        - 8000:8080
+      depends_on:
+        - mysql_db
+      environment:
+        ADMINER_DEFAULT_SERVER: mysql_db
