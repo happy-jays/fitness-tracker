@@ -10,7 +10,7 @@ const Blog = () => {
 
     useEffect(() => {
         setTimeout(() => {
-          fetch('http://localhost:8080/blog/posts',{
+          fetch('http://ec2-3-110-0-121.ap-south-1.compute.amazonaws.com:8080/blog/posts',{
             method:'GET',
             headers:{
               Authorization:'Bearer '+localStorage.getItem('token')

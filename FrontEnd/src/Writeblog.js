@@ -14,7 +14,7 @@ const Writeblog = () => {
     const addBlog = (e) => {
         e.preventDefault();
         const blog = { title, content, author };
-        fetch('http://localhost:8080/blog/createpost', {
+        fetch('http://ec2-3-110-0-121.ap-south-1.compute.amazonaws.com:8080/blog/createpost', {
           
             method: 'POST',
             headers:{

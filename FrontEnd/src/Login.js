@@ -15,7 +15,7 @@ const Login = () => {
 	const SubmitHandler = (e) =>{
 		e.preventDefault()
 		const details = { email ,password};
-		fetch('http://localhost:8080/auth/login',{
+		fetch('http://ec2-3-110-0-121.ap-south-1.compute.amazonaws.com:8080/auth/login',{
 			method:"POST",
 			headers:{
 				"Content-Type":"application/json",

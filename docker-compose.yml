@@ -2,21 +2,21 @@ version: '3.8'
 
 x-common-variables: &common-variables
    MYSQL_DATABASE: node-complete
-   MYSQL_PASSWORD: happy&2001
-   MYSQL_ALLOW_EMPTY_PASSWORD: false
-   MYSQL_RANDOM_ROOT_PASSWORD: false
+   MYSQL_ROOT_PASSWORD: happy&2001
+   
+   MYSQL_ROOT_HOST: localhost
+   
 services:
   mysql_db:
-    image: mysql
-    restart: always
-    cap_add:
-      - SYS_NICE
-    volumes:
-      - "./setup.sql:/docker-entrypoint-initdb.d/setup.sql"
+    image: mysql:latest
     ports:
-      - "8080:8080"
+      - 127.0.0.1:3307:3306
+      
+    
     environment:
-      <<: *common-variables
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: node-complete
+      MYSQL_ROOT_HOST: '%'  # needs to be enclosed with quotes
       
 
   nginx:

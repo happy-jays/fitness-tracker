@@ -11,7 +11,7 @@ const Signup = () => {
     const addDetails = (e) => {
         e.preventDefault();
         const details = { name, email ,password};
-        fetch('http://localhost:8080/auth/signup', {
+        fetch('http://ec2-3-110-0-121.ap-south-1.compute.amazonaws.com:8080/auth/signup', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
 			body:JSON.stringify(details)
